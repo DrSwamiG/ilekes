@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Three Pillars of Divination | SwamiG Institute</title>
+  <meta
+    name="description"
+    content="Week 5 Four Cowrie lesson on the Three Pillars of Divination: Seed, Soil, and Soul."
+  />
+
+  <style>
+    :root {
+      --bg: #07080c;
+      --bg-deep: #05060a;
+      --panel: #151a24;
+      --panel-dark: #0e1219;
+      --text: #f4efe4;
+      --muted: #c5bda9;
+      --gold: #d4af37;
+      --gold-soft: #f0d67a;
+      --blue-soft: #c5d7ff;
+      --blue-glow: rgba(123, 167, 255, 0.13);
+      --gold-glow: rgba(212, 175, 55, 0.18);
+      --line: rgba(212, 175, 55, 0.18);
+      --shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+      --radius: 22px;
+      --max-width: 1120px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+      background:
+        radial-gradient(circle at top left, var(--blue-glow), transparent 28%),
+        radial-gradient(circle at top right, rgba(212, 175, 55, 0.10), transparent 24%),
+        linear-gradient(180deg, var(--bg-deep) 0%, #0a0d14 44%, #0b0f16 100%);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--gold-soft);
+      text-decoration: none;
+      transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    a:hover,
+    a:focus-visible {
+      color: #fff;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--gold-soft);
+      outline-offset: 4px;
+      border-radius: 8px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    h1 {
+      max-width: 13ch;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+
+    h2 {
+      color: var(--gold-soft);
+      font-size: clamp(1.5rem, 3.2vw, 2.2rem);
+    }
+
+    h3 {
+      color: #fff;
+      font-size: 1.22rem;
+    }
+
+    h4 {
+      color: #fff;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    footer {
+      padding: 18px 24px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-size: 0.85rem;
+    }
+
+    .wrap {
+      width: min(var(--max-width), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(7, 8, 12, 0.72);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.16);
+      backdrop-filter: blur(10px);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      font-size: 0.98rem;
+      letter-spacing: 0.04em;
+    }
+
+    .brand-badge,
+    .seal {
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background: #000;
+      border: 1px solid rgba(212, 175, 55, 0.34);
+      border-radius: 50%;
+      box-shadow: 0 0 18px rgba(212, 175, 55, 0.28);
+    }
+
+    .brand-badge {
+      width: 46px;
+      height: 46px;
+      flex: 0 0 auto;
+    }
+
+    .brand-badge img,
+    .seal img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: 0.74rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .nav a {
+      padding: 8px 14px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(212, 175, 55, 0.18);
+      border-radius: 999px;
+    }
+
+    .nav a:hover,
+    .nav a:focus-visible {
+      border-color: rgba(212, 175, 55, 0.42);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      transform: translateY(-1px);
+    }
+
+    .hero {
+      padding: 72px 0 36px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .hero-card,
+    .panel {
+      background: linear-gradient(180deg, rgba(21, 26, 36, 0.95), rgba(14, 18, 25, 0.94));
+      border: 1px solid rgba(212, 175, 55, 0.16);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      position: relative;
+      overflow: hidden;
+      padding: 34px 28px;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      width: 220px;
+      height: 220px;
+      pointer-events: none;
+      background: radial-gradient(circle, var(--gold-glow), transparent 66%);
+    }
+
+    .side-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 24px 20px;
+    }
+
+    .eyebrow,
+    .mini-title,
+    .card-label {
+      color: var(--gold-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.78rem;
+    }
+
+    .eyebrow {
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .mini-title {
+      margin-bottom: 8px;
+    }
+
+    .lead {
+      max-width: 68ch;
+      color: var(--blue-soft);
+      font-size: 1.06rem;
+    }
+
+    .hero-image {
+      margin-top: 28px;
+      overflow: hidden;
+      background: #000;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 18px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-notes,
+    .grid-3,
+    .pillars-link,
+    .possibility-grid,
+    .week-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .hero-notes {
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 24px;
+    }
+
+    .grid-3,
+    .pillars-link {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .possibility-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .week-grid {
+      grid-template-columns: repeat(7, 1fr);
+    }
+
+    .note,
+    .pillar,
+    .linkbox,
+    .flow-node,
+    .possibility,
+    .map .box {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
+      border: 1px solid rgba(212, 175, 55, 0.14);
+      border-radius: 18px;
+    }
+
+    .note {
+      padding: 14px 12px;
+      border-color: rgba(123, 167, 255, 0.16);
+    }
+
+    .note strong,
+    .linkbox strong {
+      display: block;
+      color: var(--gold-soft);
+      margin-bottom: 4px;
+      font-size: 0.95rem;
+    }
+
+    .list-clean {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .list-clean li {
+      margin-bottom: 8px;
+    }
+
+    .side-image {
+      width: min(50%, 190px);
+      margin: 16px auto;
+    }
+
+    .ack {
+      padding-top: 16px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      border-top: 1px solid rgba(212, 175, 55, 0.16);
+    }
+
+    .section {
+      padding: 24px 0 12px;
+    }
+
+    .section .panel {
+      margin-bottom: 22px;
+      padding: 28px 24px;
+    }
+
+    .pillar {
+      min-height: 100%;
+      padding: 22px 18px;
+      border-radius: 20px;
+    }
+
+    .pillar .num {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      margin-bottom: 12px;
+      color: var(--gold-soft);
+      font-weight: 700;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 50%;
+    }
+
+    .linkbox {
+      padding: 18px;
+      background: rgba(123, 167, 255, 0.06);
+      border-color: rgba(123, 167, 255, 0.18);
+    }
+
+    .response-flow,
+    .map {
+      display: grid;
+      align-items: center;
+      gap: 12px;
+      margin: 18px 0 10px;
+      text-align: center;
+    }
+
+    .response-flow {
+      grid-template-columns: 1fr auto 1fr auto 1fr;
+    }
+
+    .map {
+      grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .flow-node,
+    .map .box {
+      padding: 16px 12px;
+    }
+
+    .arrow {
+      color: var(--gold-soft);
+      font-size: 1.6rem;
+      line-height: 1;
+      opacity: 0.85;
+    }
+
+    .arrow::before {
+      content: "→";
+    }
+
+    .possibility {
+      padding: 16px 14px;
+    }
+
+    .possibility .open {
+      display: inline-block;
+      margin-bottom: 6px;
+      color: var(--gold-soft);
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .questions ol,
+    .assignment ol {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    .questions li,
+    .assignment li {
+      margin-bottom: 10px;
+      color: var(--muted);
+    }
+
+    .closing {
+      padding: 10px 0 48px;
+      text-align: center;
+    }
+
+    .closing .panel {
+      padding: 32px 24px;
+    }
+
+    .seal {
+      width: 74px;
+      height: 74px;
+      margin: 0 auto 16px;
+      border-color: rgba(212, 175, 55, 0.28);
+      box-shadow: 0 0 24px rgba(212, 175, 55, 0.22);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .gold {
+      color: var(--gold-soft);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      width: min(var(--max-width), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    @media (max-width: 1180px) {
+      .possibility-grid,
+      .week-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-3,
+      .pillars-link {
+        grid-template-columns: 1fr;
+      }
+
+      .response-flow,
+      .map {
+        grid-template-columns: 1fr;
+      }
+
+      .arrow {
+        margin: 2px 0;
+        transform: rotate(90deg);
+      }
+
+      .hero-notes {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .hero {
+        padding-top: 40px;
+      }
+
+      .hero-card,
+      .side-card,
+      .section .panel,
+      .closing .panel {
+        padding: 22px 18px;
+      }
+
+      .wrap,
+      .footer-inner {
+        width: min(var(--max-width), calc(100% - 20px));
+      }
+
+      .possibility-grid,
+      .week-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="https://swamiginstitute.com" aria-label="SwamiG Institute home">
+        <span class="brand-badge" aria-hidden="true">
+          <img
+            src="https://ilekes.ifamystictemple.com/assets/SwamiG.gif"
+            alt=""
+          />
+        </span>
+        <span>
+          Week 5 — Four Cowrie
+          <small>A Three-Pillar Approach to Divination</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#pillars">Pillars</a>
+        <a href="#responses">Responses</a>
+        <a href="#possibilities">Possibilities</a>
+        <a href="#assignment">Assignment</a>
+        <a href="lesson1.html">Enter Modules</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="wrap hero-grid">
+        <article class="hero-card">
+          <div class="eyebrow">Four Cowrie Divination System</div>
+
+          <h1 id="page-title">The Three Pillars of Divination</h1>
+
+          <p class="lead">
+            This lesson interprets the divinatory structure through a teaching lens:
+            three pillars, three fundamental responses, five possibilities, and the
+            unfolding into the deeper body of Odu and Ifá / Isese. The pillars in
+            this module are not fixed universally for all divination systems. They
+            are examples of the triangulation of life. Other pillars may be based
+            on Khemetic deities, Orisha, or other systems contacted along the path
+            of enlightenment.
+          </p>
+
+          <div class="hero-notes" aria-label="Three pillars summary">
+            <div class="note">
+              <strong>Pillar 1 — <i>Seed</i></strong>
+              Yes / Probably Yes
+            </div>
+            <div class="note">
+              <strong>Pillar 2 — <i>Soil</i></strong>
+              No / Probably No
+            </div>
+            <div class="note">
+              <strong>Pillar 3 — <i>Soul</i></strong>
+              Definitely / Neutral / Absolute
+            </div>
+          </div>
+
+          <figure class="hero-image">
+            <img
+              src="https://ilekes.ifamystictemple.com/assets/3pillar4cowrie.png"
+              alt="Three Pillars of Divination and Four Cowrie Shell System"
+            />
+          </figure>
+        </article>
+
+        <aside class="hero-card side-card" aria-labelledby="module-focus">
+          <div>
+            <div class="mini-title" id="module-focus">Module Focus</div>
+
+            <ul class="list-clean">
+              <li>Expand the range of influence in the Four Cowrie Divination System.</li>
+              <li>Connect Yes, No, and Definitely to Seed, Soil, and Soul.</li>
+              <li>Use the five possibilities to prepare for deeper Ifá / Isese study.</li>
+              <li>Frame divination as devotion, power, wisdom, discipline, and alignment.</li>
+              <li>Establish divination as a daily reinitiation for the serious enlightenment seeker.</li>
+            </ul>
+
+            <img
+              class="side-image"
+              src="https://4cowrieshell.com/4cowrie.png"
+              alt="Four cowrie shells"
+            />
+          </div>
+
+          <p class="ack">
+            <strong class="gold">Acknowledgement:</strong>
+            This module is presented in an
+            <strong><a href="https://www.manypaths1truth.org/">Institute of Whole Life Healing</a></strong>
+            framework, with respectful acknowledgement that related instructional
+            streams may also be appreciated within the broader spiritual work of
+            <strong><a href="https://swamiginstitute.com">SGI</a></strong>
+            and <strong><a href="https://naturalchoicesbotanica.com/">NCB</a></strong>.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="overview" class="section" aria-labelledby="overview-title">
+      <div class="wrap">
+        <div class="panel">
+          <h2 id="overview-title">Module Overview</h2>
+
+          <p>
+            Divination is not merely the receiving of answers. It is the disciplined
+            unfolding of truth through a prepared vessel. The images compel a simple
+            but powerful progression:
+          </p>
+
+          <div class="map" aria-label="Divination progression map">
+            <div class="box"><strong>3 Pillars / Responses</strong></div>
+            <div class="arrow" aria-hidden="true"></div>
+            <div class="box"><strong>5 Possibilities</strong></div>
+            <div class="arrow" aria-hidden="true"></div>
+            <div class="box"><strong>256</strong></div>
+            <div class="arrow" aria-hidden="true"></div>
+            <div class="box"><strong>400 + 1</strong></div>
+          </div>
+
+          <p>
+            In this module, the student learns that divinatory clarity begins with
+            inner character formation. One must accept the seed of life within,
+            prepare the soil of consciousness, and stand ready to align with the
+            universal truth of Soul within and without. Only then can responses be
+            heard correctly, possibilities be interpreted wisely, and Deity / Odu
+            be received with maturity and detachment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pillars" class="section" aria-labelledby="pillars-title">
+      <div class="wrap">
+        <div class="panel">
+          <h2 id="pillars-title">Three Pillars of Divination</h2>
+
+          <div class="grid-3">
+            <article class="pillar">
+              <div class="num">1</div>
+              <h3>Seed</h3>
+              <p>
+                Before a reading can be trusted, the reader must become aware of
+                self: motive, emotion, fear, desire, memory, projection, and expectation.
+              </p>
+              <p>
+                Seed is the first purification of source perception. Without it,
+                divination may be bent toward preference rather than truth.
+              </p>
+            </article>
+
+            <article class="pillar">
+              <div class="num">2</div>
+              <h3>Soil</h3>
+              <p>
+                Soil is the prepared condition. Agitation, confusion, resentment,
+                impurity of intent, and spiritual heaviness can cloud interpretation.
+              </p>
+              <p>
+                To prepare the Soil is to prepare the mind, body, and spirit as a
+                receptive place for truth.
+              </p>
+            </article>
+
+            <article class="pillar">
+              <div class="num">3</div>
+              <h3>Soul</h3>
+              <p>
+                The highest aim of divination is not curiosity. It is attunement
+                with Soul — the Soul of Creation. The seeker must be willing to
+                obey, adjust, and live according to what is revealed.
+              </p>
+              <p>
+                Truth has little value when it is heard but not lived.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="responses" class="section" aria-labelledby="responses-title">
+      <div class="wrap">
+        <div class="panel">
+          <h2 id="responses-title">Three Fundamental Responses</h2>
+
+          <p>
+            The image identifies three basic divinatory responses:
+            <strong>Yes</strong>, <strong>No</strong>, and <strong>Definitely</strong>.
+            These are not only answers. They are spiritual states linked to the
+            pillars of an evolving self.
+          </p>
+
+          <div class="response-flow" aria-label="Yes, No, Definitely response flow">
+            <div class="flow-node">
+              <h3>Yes</h3>
+              <p class="muted">Opening, recognition, awareness</p>
+            </div>
+            <div class="arrow" aria-hidden="true"></div>
+            <div class="flow-node">
+              <h3>No</h3>
+              <p class="muted">Warning, restraint, correction</p>
+            </div>
+            <div class="arrow" aria-hidden="true"></div>
+            <div class="flow-node">
+              <h3>Definitely</h3>
+              <p class="muted">Certainty, stability, alignment</p>
+            </div>
+          </div>
+
+          <div class="pillars-link">
+            <div class="linkbox">
+              <strong>Yes — Seed</strong>
+              “Yes” is the opening of consciousness. It suggests recognition,
+              awareness, and the first moment of truthful seeing.
+            </div>
+
+            <div class="linkbox">
+              <strong>No — Soil</strong>
+              “No” often teaches more than denial. It points to what must be
+              corrected, refined, cleared, or realigned before movement.
+            </div>
+
+            <div class="linkbox">
+              <strong>Definitely — Soul</strong>
+              “Definitely” is firm confirmation. It reflects grounded truth,
+              balance, and clear agreement with divine order.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="possibilities" class="section" aria-labelledby="possibilities-title">
+      <div class="wrap">
+        <div class="panel">
+          <h2 id="possibilities-title">The Five Possibilities</h2>
+
+          <p>
+            From the three basic responses, the divinatory field expands into five
+            possibilities associated with the shell pattern. These provide nuance,
+            movement, and interpretive depth.
+          </p>
+
+          <div class="possibility-grid">
+            <article class="possibility">
+              <span class="open">4 Open</span>
+              <h4>Alafia — Yes</h4>
+              <p>
+                Peace, blessing, openness, favorable movement. Often expresses a
+                strong yes, though context is still important.
+              </p>
+            </article>
+
+            <article class="possibility">
+              <span class="open">3 Open</span>
+              <h4>Etawa — Yes</h4>
+              <p>
+                Qualified yes. Openness with condition. Progress is possible, but
+                awareness and refinement are still needed.
+              </p>
+            </article>
+
+            <article class="possibility">
+              <span class="open">2 Open</span>
+              <h4>Ejife — Definitely</h4>
+              <p>
+                Balance, agreement, stability, centered truth. Often read as strong
+                confirmation and reliable support.
+              </p>
+            </article>
+
+            <article class="possibility">
+              <span class="open">1 Open</span>
+              <h4>Okana — No</h4>
+              <p>
+                Warning, uncertainty, resistance, delay, reconsideration. The
+                matter is not yet clear or ready.
+              </p>
+            </article>
+
+            <article class="possibility">
+              <span class="open">0 Open</span>
+              <h4>Oyeku — No</h4>
+              <p>
+                Closure, denial, inwardness, deep no. Sometimes a withdrawal;
+                sometimes a summons to reflection.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Reading the Five Possibilities Through the Pillars</h2>
+
+          <div class="grid-3">
+            <article class="pillar">
+              <h3>Seed</h3>
+              <p>
+                Seed is strongly reflected in <strong>Yes</strong> as opening and
+                recognition, and at times in <strong>Ogbe, Osa, Ogunda, Irete, or Otura</strong>
+                when the reading requires honest inward acceptance and open roads.
+              </p>
+            </article>
+
+            <article class="pillar">
+              <h3>Soil</h3>
+              <p>
+                Soil is strongly reflected in <strong>No</strong>, <strong>Okana</strong>,
+                and sometimes <strong>Oyeku</strong>, as well as Obara, Ika, and
+                Oturupon, where refinement, caution, or spiritual clearing may be needed.
+              </p>
+            </article>
+
+            <article class="pillar">
+              <h3>Soul</h3>
+              <p>
+                Soul is most clearly reflected in <strong>Ejife</strong>, where
+                balance, certainty, agreement, and stable truth are present. Iwori,
+                Edi, Irosun, Owonrin, Oshe, and Ofun may also reflect this quality in Odu.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="action-title">
+      <div class="wrap">
+        <div class="panel">
+          <h2 id="action-title">From Responses to Action</h2>
+
+          <p>
+            The five possibilities are not the end of the process. They are the gate.
+            Once the field of response has been identified, the student enters
+            deeper study and interpretation through action.
+          </p>
+
+          <div class="map" aria-label="Responses to action map">
+            <div class="box"><strong>3 Responses</strong></div>
+            <div class="arrow" aria-hidden="true"></div>
+            <div class="box"><strong>5 Possibilities</strong></div>
+            <div class="arrow" aria-hidden="true"></div>
+            <div class="box"><strong>256</strong></div>
+            <div class="arrow" aria-hidden="true"></div>
+            <div class="box"><strong>400 + 1</strong></div>
+          </div>
+
+          <p>
+            Divination begins with broad principle and unfolds into pattern, story,
+            teaching, remedy, and responsibility. The answer is first heard as
+            signal, then interpreted as structure, then lived as wisdom.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section questions" aria-labelledby="questions-title">
+      <div class="wrap">
+        <div class="panel">
+          <h2 id="questions-title">Discussion Questions</h2>
+
+          <ol>
+            <li>Why must self-knowledge come before interpretation?</li>
+            <li>How does purification change the quality of a reading?</li>
+            <li>Why is “Definitely” different from a simple “Yes”?</li>
+            <li>Which of the five possibilities best expresses stable truth, and why?</li>
+            <li>How can a divinatory “No” be understood as guidance rather than rejection?</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="assignment" class="section assignment" aria-labelledby="assignment-title">
+      <div class="wrap">
+        <div class="panel">
+          <h2 id="assignment-title">Practice Reflection and Assignment</h2>
+
+          <h3>Reflection Practice</h3>
+          <p>
+            Take one real question from your life. Sit quietly and reflect through
+            the three pillars before seeking an answer.
+          </p>
+
+          <ol>
+            <li><strong>Seed:</strong> What bias, desire, fear, or expectation might influence your interpretation?</li>
+            <li><strong>Soil:</strong> What in your thought, emotion, conduct, or environment needs to be cleared?</li>
+            <li><strong>Soul:</strong> What truth must you be willing to accept and obey?</li>
+          </ol>
+
+          <h3>Written Assignment / Application</h3>
+          <p>
+            Write a short response titled:
+            <strong class="gold">“How the Three Pillars Prepare a Person for Divination.”</strong>
+          </p>
+
+          <ol>
+            <li>Define each pillar in your own words.</li>
+            <li>Explain how each pillar relates to Yes, No, and Definitely.</li>
+            <li>Briefly describe the five possibilities and their spiritual value.</li>
+            <li>Conclude with one paragraph on how divination helps shape reality through truth and alignment.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="sgi-week" class="section assignment" aria-labelledby="sgi-week-title">
+      <div class="wrap">
+        <div class="panel">
+          <h2 id="sgi-week-title">SGI One-Week Module</h2>
+
+          <h3>The Three Pillars of Divination: Seed, Soil, and Soul</h3>
+          <p>
+            This seven-day SGI module guides the student through daily reflection,
+            casting practice, interpretation, and application using the three pillars
+            of divination: <strong>Seed</strong>, <strong>Soil</strong>, and <strong>Soul</strong>.
+          </p>
+
+          <div class="week-grid">
+            <article class="possibility">
+              <span class="open">Day 1</span>
+              <h4>Orientation</h4>
+              <p>Study Seed, Soil, and Soul. Write one paragraph explaining how each pillar prepares the diviner.</p>
+            </article>
+
+            <article class="possibility">
+              <span class="open">Day 2</span>
+              <h4>Seed</h4>
+              <p>Ask one personal question. Before casting, write what desire, fear, or expectation may influence your reading.</p>
+            </article>
+
+            <article class="possibility">
+              <span class="open">Day 3</span>
+              <h4>Soil</h4>
+              <p>Prepare your space. Cleanse your hands, breath, and intention. Cast and record what needs correction or refinement.</p>
+            </article>
+
+            <article class="possibility">
+              <span class="open">Day 4</span>
+              <h4>Soul</h4>
+              <p>Cast on the question: “What truth must I accept today?” Record the result and one action of alignment.</p>
+            </article>
+
+            <article class="possibility">
+              <span class="open">Day 5</span>
+              <h4>Five Possibilities</h4>
+              <p>Review Alafia, Etawa, Ejife, Okana, and Oyeku. Cast three times and identify the pattern of response.</p>
+            </article>
+
+            <article class="possibility">
+              <span class="open">Day 6</span>
+              <h4>From Answer to Action</h4>
+              <p>Choose one reading from the week. Explain how the answer becomes behavior, remedy, responsibility, or restraint.</p>
+            </article>
+
+            <article class="possibility">
+              <span class="open">Day 7</span>
+              <h4>Integration</h4>
+              <p>Write a final reflection: “How Seed, Soil, and Soul Help Me Receive Truth Through Divination.”</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Seven Required Assignments</h2>
+
+          <ol>
+            <li><strong>Assignment 1:</strong> Define Seed, Soil, and Soul in your own words.</li>
+            <li><strong>Assignment 2:</strong> Record one question and identify your inner bias before casting.</li>
+            <li><strong>Assignment 3:</strong> Complete one cleansing / preparation ritual before divination.</li>
+            <li><strong>Assignment 4:</strong> Cast for guidance and record whether the response is Yes, No, or Definitely.</li>
+            <li><strong>Assignment 5:</strong> Identify the five-possibility result: Alafia, Etawa, Ejife, Okana, or Oyeku.</li>
+            <li><strong>Assignment 6:</strong> Write the action, correction, or alignment required by the reading.</li>
+            <li><strong>Assignment 7:</strong> Submit a final one-page reflection connecting Seed, Soil, Soul, and truth.</li>
+          </ol>
+        </div>
+
+        <div class="panel">
+          <h2>SGI Closing Statement</h2>
+          <p>
+            In SGI practice, divination is not only a method of receiving answers.
+            It is a discipline of becoming. Seed reveals the inner condition. Soil
+            prepares the vessel. Soul aligns the person with truth. Through seven
+            days of practice, the student learns to move from question, to response,
+            to wisdom, to action.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="wrap">
+        <div class="panel">
+          <div class="seal" aria-hidden="true">
+            <img src="/assets/SwamiGLogo.png" alt="" />
+          </div>
+
+          <h2 id="closing-title">Closing Insight</h2>
+
+          <p>
+            Divination does not begin with shells alone. It begins with the condition
+            of the person who approaches the oracle.
+          </p>
+
+          <p>
+            To <strong>Seed</strong> is to become honest.<br />
+            To <strong>Soil</strong> is to become clear.<br />
+            To <strong>Soul</strong> is to become aligned.
+          </p>
+
+          <p>
+            Then the answers can be heard. Then the possibilities can be weighed.
+            Then Odu can be received not merely as information, but as wisdom.
+          </p>
+
+          <p class="muted">
+            This instructional presentation respectfully acknowledges enlightenment
+            seekers past, present, and future.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© SwamiG Institute 2026 • Ifá • Isese • Orisha</span>
+      <span>Supported by Sheps(+) Ogunda</span>
+    </div>
+  </footer>
+</body>
+</html>
